@@ -1,18 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-class OlderCoaster extends React.Component {
-  render() {
-    return React.createElement('div', { className: 'oldercoaster' },
-    React.createElement('p', {}, 'Two grannies having the time of their life!'),
-    React.createElement('p', {}, 'Passengers:'),
-    React.createElement('ul', {}, [
-      React.createElement('li', {}, 'Agnes'),
-      React.createElement('li', {}, 'Muriel')
-    ])
-  )
-  }
-}
 
 class InFrontOfYou extends React.Component {
   render() {
@@ -45,9 +33,18 @@ const BUTCHER_PRODUCTS = [
 ];
 
 // Define these exported classes
-export class OlderCoaster extends React.Component {};
-export class InFrontOfYou extends React.Component {};
-export class ButcherShop extends React.Component {};
+export class OlderCoaster extends React.Component {
+  render() {
+    return React.createElement('div', { className: 'oldercoaster' },
+    React.createElement('p', {}, 'Two grannies having the time of their life!'),
+    React.createElement('p', {}, 'Passengers:'),
+    React.createElement('ul', {}, [
+      React.createElement('li', {}, 'Agnes'),
+      React.createElement('li', {}, 'Muriel')
+    ])
+  )
+  }
+}
 
 ReactDOM.render(
   React.createElement('div', {}, [
