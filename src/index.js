@@ -13,6 +13,14 @@ class OlderCoaster extends React.Component {
   }
 }
 
+class InFrontOfYou extends React.Component {
+  render() {
+    return React.createElement('div', {},
+    React.createElement('p', {}, "You shouldn't look too far."),
+    React.createElement('p', {}, "Sometimes, the solution is right in front of you.")
+  )
+  }
+}
 
 const BUTCHER_PRODUCTS = [
   'Tenderloin',
