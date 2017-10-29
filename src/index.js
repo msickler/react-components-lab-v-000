@@ -11,18 +11,18 @@ const BUTCHER_PRODUCTS = [
 // Define these exported classes
 export class OlderCoaster extends React.Component {
   render(){
-    const description = React.createElement("p", {}, 
+    const description = React.createElement("p", {},
       "Two grannies having the time of their life!");
-    const listTitle = React.createElement("p", {}, 
+    const listTitle = React.createElement("p", {},
       "Passengers:");
     const passengerList = React.createElement("ul", {}, [
-      React.createElement("li",{}, "Agnes"),      
+      React.createElement("li",{}, "Agnes"),
       React.createElement("li",{}, "Muriel")
     ]);
 
     return React.createElement("div", {className: "oldercoaster"}, [
-      description, 
-      listTitle, 
+      description,
+      listTitle,
       passengerList
     ]);
   }
@@ -39,7 +39,7 @@ export class InFrontOfYou extends React.Component {
 
 export class ButcherShop extends React.Component {
   render(){
-    const productList = React.createElement("ul", {}, 
+    const productList = React.createElement("ul", {},
       BUTCHER_PRODUCTS.map((product) => {
         return React.createElement("li", {}, product);
       })
